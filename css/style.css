@@ -1,0 +1,23 @@
+body{
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 30px;
+}
+figure {
+	  display: block; 
+    text-align: center; 
+    margin-top: 0; 
+    margin-bottom: 5px;   
+}
+hr {
+margin-top: 33px;
+margin-bottom: 34px;
+}
+.prof {
+	padding-top: 20px;
+
+}
