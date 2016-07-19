@@ -1,116 +1,140 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-body{
-	font-family: Tahoma, Arial, sans-serif;
-}
-.wrapper{
-	margin: 0 auto;
-	padding: 0 46px;
-	width: 968px;
-	background: #fff;
--webkit-box-shadow: 0px 0px 4px 0px rgba(204,204,204,1);
--moz-box-shadow: 0px 0px 4px 0px rgba(204,204,204,1);
-box-shadow: 0px 0px 4px 0px rgba(204,204,204,1);
+body {
+     background-color: #f9f9f9;
 }
 
-.header{
-padding-top: 50px;
-margin-bottom: 40px;
+.document {
+    box-sizing: border-box;
+    margin: 0px auto;
+    padding: 50px 46px 60px 48px;
+    width: 1060px;
+    background-color: white;
+    box-shadow: 0px 1px 2px 1px rgba(204,204,204,1);
 }
-.menu{
-position: relative;
-overflow: hidden;
-margin-top: 40px;
-background: #505050; 
-background: -moz-linear-gradient(top,  #505050 6%, #323232 100%); 
-background: -webkit-linear-gradient(top,  #505050 6%,#323232 100%); 
-background: linear-gradient(to bottom,  #505050 6%,#323232 100%); 
+
+.logo{
+	height: 40px;
 }
-.menu li{
-	list-style: none;
-	float: left;
+.menu-top {
+    margin: 40px 0px 40px;
+    height: 40px;
+    color: white;
+	background: linear-gradient(to bottom, #5e5e5e, #444343);
+    font-size: 14.67px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 }
-.menu a{
-	display: block;
-	color: white;
+
+.menu-top li {
+    display: inline-block;
+    margin-right: 40px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.menu-top a{
+	display: inherit;
 	line-height: 40px;
-	padding: 0 40px;
-	text-decoration: none;
-  font-size: 15px;
-}
-.menu a:hover{
-	background: #111010;
-}
-.content{
-	position: relative;
-	overflow: hidden;
-}
-.sidebar{
-   float: left;
-   width: 240px;
-   
-}
-.side-menu{
-border: 1px solid #c8c8c8;
-}
-.side-menu a{
-	padding-left: 20px;
-	line-height: 37px;
-	color:#949494;
-	text-decoration: none;
-	transition: 0.2s all;
+	padding: 0px 30px 0px 24px;
+    text-decoration: inherit;
+    color: inherit;
 }
 
+.menu-top li:hover {
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
+	background: linear-gradient(to bottom, #4a4a4a, #2e2e2e);
+}
+/* ------------end menu-top------------- */
+.menu-left {
+    float: left;
+    background-color: white;
+    font-size: 13.33px;
+}
 
+.menu-left li {
+    box-sizing: border-box;
+    display: block;
+    border-top: 1px solid #c8c8c8;
+	border-left: 1px solid #c8c8c8;
+	border-right: 1px solid #c8c8c8;
+}
 
-/*.side-menu li:first-child{
-	border: none;
-}*/
-.side-menu li{
+.menu-left li:last-child{
 	border-bottom: 1px solid #c8c8c8;
+}
 
-}
-.side-menu a:hover{
-	color: #656363;
-	padding-left: 35px;
-}
-.product{
-	float: right;
-	width: 680px;
-}
-.product-imag{
-	/*padding: 40px 0;*/
-	border: 1px solid #c8c8c8;
-	text-align: center;
-}
-.product p{
-padding: 30px 22px 0 22px;
-line-height: 21px;
-font-size: 13px;
-color: #2c2c2c;
-}
-.footer{
-padding: 50px 0;
-}
-.footer-menu{
-	position: relative;
-	overflow: hidden;
-	background: #e1e1e1;
-}
-.footer-menu li{
-float: left;
-list-style: none;
-}
-.footer-menu .copyrights{
-	float: right;
-	padding-right: 26px;
-}
-.footer-menu  a{
+.menu-left a {
 	display: block;
-	padding: 0 50px;
+    padding-left: 22px;
+	width: 218px;
+	height: 40px;
 	line-height: 40px;
-	color: #2c2c2c;
-	text-decoration: none;
+    color: #656363;
+	text-decoration: inherit;
+}
+
+.menu-left a:hover {
+    padding-left: 35px;
+	width: 205px;
+    background-color: #f9f9f9;
+    color: #2c2c2c;
+}
+/*  ---------------------end menu-left----------------------- */
+.article {
+    margin-left: 288px;
+}
+
+.goods-container {
+    position: relative;
+    box-sizing: border-box;
+    height: 400px;
+    width: 678px;
+    border: 1px solid #c8c8c8;
+}
+
+.goods{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.description {
+    padding: 32px 24px;
+
+    font-size: 13.33px;
+    line-height: 16pt;
+    letter-spacing: -0.25px;
+}
+
+footer {
+    height: 40px;
+    margin-top: 50px;
+
+    background-color: #e1e1e1;
+
+    line-height: 40px;
+    font-size: 13.33px;
+}
+
+.menu-bottom {
+    display: inline-block;
+}
+
+.menu-bottom li {
+    display: inline-block;
+    padding: 0px 70px 0px 25px;
+}
+
+.menu-bottom li a {
+    color: #2c2c2c;
+    text-decoration: none;
+}
+
+.menu-bottom li a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    float: right;
+    padding-right: 40px;
 }
